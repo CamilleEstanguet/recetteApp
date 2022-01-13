@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recettes",
+  "info": {
+    "singularName": "recette",
+    "pluralName": "recettes",
+    "displayName": "Recette",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Ingredients": {
+      "type": "text"
+    }
+  }
+}
